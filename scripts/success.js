@@ -56,7 +56,7 @@ switch(storage){
 
             let code = Math.floor(Math.random()*(999-100+1)+100)
             
-            header.innerHTML = 'NEW TRICYCLE REGISTRATION ( OWNER )';
+            header.innerHTML = 'NEW TRICYCLE REGISTRATION (OWNER)';
             firstName.innerText = `First Name : ${formData['first_name']} ` 
             lastName.innerText = `Last Name : ${formData['last_name']} ` 
             email.innerText = `Email : ${formData['email']} ` 
