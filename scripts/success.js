@@ -56,7 +56,7 @@ switch(storage){
 
             let code = Math.floor(Math.random()*(999-100+1)+100)
             
-            header.innerHTML = 'NEW TRICYCLE REGISTRATION (OWNER)';
+            header.innerHTML = 'NEW TRICYCLE REGISTRATION ( OWNER )';
             firstName.innerText = `First Name : ${formData['first_name']} ` 
             lastName.innerText = `Last Name : ${formData['last_name']} ` 
             email.innerText = `Email : ${formData['email']} ` 
@@ -86,7 +86,7 @@ switch(storage){
             lastName.innerText = `Last Name : ${formData['last_name']} ` 
             email.innerText = `Email : ${formData['email']} ` 
             phone.innerText = `Phone : ${formData['phone']} ` 
-            amount.innerText = 'Amount:  5000 '
+            amount.innerText = 'Amount:  10000 '
             paidFor.innerText = 'Payment for :  Renewal Tricycle Registration Owner '
             reference.innerText = `Reference Code : ${referenceCode || ''}`;
             paymentNumber.innerText = `Payment Number1${code}`
@@ -117,9 +117,60 @@ switch(storage){
             paymentNumber.innerText = `Payment Number1${code}`
         }
         break;
+    case 'COT':
+        if(header) {
+
+            let data = localStorage.getItem('PAY');
+            let record = JSON.parse(localStorage.getItem(data));
+
+            let referenceCode;
+
+            if(record){
+                referenceCode = record.shift();
+                localStorage.setItem(storage, JSON.stringify(record))
+            }
+
+            let code = Math.floor(Math.random()*(999-100+1)+100)
+            
+            header.innerHTML = 'CHANGE OWNERSHIP TRICYCLE';
+            firstName.innerText = `First Name : ${formData['first_name']} ` 
+            lastName.innerText = `Last Name : ${formData['last_name']} ` 
+            email.innerText = `Email : ${formData['email']} ` 
+            phone.innerText = `Phone : ${formData['phone']} ` 
+            amount.innerText = 'Amount:  2000 '
+            paidFor.innerText = 'Payment for :  Change Ownership Tricycle '
+            reference.innerText = `Reference Code : ${referenceCode || ''}`;
+            paymentNumber.innerText = `Payment Number${code}`
+
+        }
+             break;
+    case 'TOT':
+        if(header) {
+
+            let data = localStorage.getItem('PAY');
+            let record = JSON.parse(localStorage.getItem(data));
+
+            let referenceCode;
+
+            if(record){
+                referenceCode = record.shift();
+                localStorage.setItem(storage, JSON.stringify(record))
+            }
+
+            let code = Math.floor(Math.random()*(999-100+1)+100)
+            
+            header.innerHTML = 'OWNERSHIP TRANSFER TRICYCLE';
+            firstName.innerText = `First Name : ${formData['first_name']} ` 
+            lastName.innerText = `Last Name : ${formData['last_name']} ` 
+            email.innerText = `Email : ${formData['email']} ` 
+            phone.innerText = `Phone : ${formData['phone']} ` 
+            amount.innerText = 'Amount:  2000 '
+            paidFor.innerText = 'Payment for :  Ownership Transfer Tricycle '
+            reference.innerText = `Reference Code : ${referenceCode || ''}`;
+            paymentNumber.innerText = `Payment Number${code}`
+
+        }
+            break;
     default:
     
 }
-
-
-
