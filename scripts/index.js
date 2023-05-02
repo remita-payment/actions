@@ -11,6 +11,8 @@ let selected = document.getElementById('selected')
         document.getElementById('RTR').innerText = String(JSON.parse(localStorage?.getItem('RTR'))?.length || 0) 
         document.getElementById('NTO').innerText = String(JSON.parse(localStorage?.getItem('NTO'))?.length || 0) 
         document.getElementById('RTO').innerText = String(JSON.parse(localStorage?.getItem('RTO'))?.length || 0) 
+        document.getElementById('COT').innerText = String(JSON.parse(localStorage?.getItem('COT'))?.length || 0) 
+        document.getElementById('TOT').innerText = String(JSON.parse(localStorage?.getItem('TOT'))?.length || 0) 
     })
 
 
@@ -35,6 +37,8 @@ let selected = document.getElementById('selected')
         document.getElementById('RTR').innerText = String(JSON.parse(localStorage.getItem('RTR'))?.length || 0) 
         document.getElementById('NTO').innerText = String(JSON.parse(localStorage.getItem('NTO'))?.length || 0) 
         document.getElementById('RTO').innerText = String(JSON.parse(localStorage.getItem('RTO'))?.length || 0) 
+        document.getElementById('COT').innerText = String(JSON.parse(localStorage?.getItem('COT'))?.length || 0) 
+        document.getElementById('TOT').innerText = String(JSON.parse(localStorage?.getItem('TOT'))?.length || 0) 
 
         alert('Information saved')
     })
