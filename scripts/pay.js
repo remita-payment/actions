@@ -36,7 +36,12 @@ switch(storage){
     case 'RTR':
         if(header) header.innerHTML = 'RENEWAL TRICYCLE REGISTRATION <br />(N1,500.00) RIDER'
         break;
+    case 'COT':
+        if(header) header.innerHTML = 'CHANGE OWNERSHIP TRICYCLE <br />(N2,000.00).'
+        break;
+    case 'TOT':
+        if(header) header.innerHTML = 'OWNERSHIP TRANSFER TRICYCLE <br />(N2,000.00).'
+        break;
     default:
         ''
-    
 }
