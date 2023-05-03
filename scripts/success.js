@@ -86,7 +86,7 @@ switch(storage){
             lastName.innerText = `Last Name : ${formData['last_name']} ` 
             email.innerText = `Email : ${formData['email']} ` 
             phone.innerText = `Phone : ${formData['phone']} ` 
-            amount.innerText = 'Amount:  10000 '
+            amount.innerText = 'Amount:  5000 '
             paidFor.innerText = 'Payment for :  Renewal Tricycle Registration Owner '
             reference.innerText = `Reference Code : ${referenceCode || ''}`;
             paymentNumber.innerText = `Payment Number1${code}`
