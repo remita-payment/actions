@@ -38,7 +38,7 @@ switch(storage){
             amount.innerText = 'Amount:  1500 '
             paidFor.innerText = 'Payment for :  New Rider Tricycle Registration '
             reference.innerText = `Reference Code : ${referenceCode || ''}`;
-            paymentNumber.innerText = `Payment Number1${code}`
+            paymentNumber.innerText = `Payment Number2${code}`
 
         }
              break;
@@ -64,7 +64,7 @@ switch(storage){
             amount.innerText = 'Amount:  10000 '
             paidFor.innerText = 'Payment for :  New Tricycle Registration Owner '
             reference.innerText = `Reference Code : ${referenceCode || ''}`;
-            paymentNumber.innerText = `Payment Number1${code}`
+            paymentNumber.innerText = `Payment Number2${code}`
         }
         break;
     case 'RTO':
@@ -89,7 +89,7 @@ switch(storage){
             amount.innerText = 'Amount:  5000 '
             paidFor.innerText = 'Payment for :  Renewal Tricycle Registration Owner '
             reference.innerText = `Reference Code : ${referenceCode || ''}`;
-            paymentNumber.innerText = `Payment Number1${code}`
+            paymentNumber.innerText = `Payment Number2${code}`
         }
         break;
     case 'RTR':
@@ -114,7 +114,7 @@ switch(storage){
             amount.innerText = 'Amount:  1500 '
             paidFor.innerText = 'Payment for :  Renewal Tricycle Registration Rider'
             reference.innerText = `Reference Code : ${referenceCode || ''}`;
-            paymentNumber.innerText = `Payment Number1${code}`
+            paymentNumber.innerText = `Payment Number2${code}`
         }
         break;
     case 'COT':
@@ -140,7 +140,7 @@ switch(storage){
             amount.innerText = 'Amount:  2000 '
             paidFor.innerText = 'Payment for :  Change Ownership Tricycle '
             reference.innerText = `Reference Code : ${referenceCode || ''}`;
-            paymentNumber.innerText = `Payment Number${code}`
+            paymentNumber.innerText = `Payment Number1${code}`
 
         }
              break;
@@ -167,7 +167,7 @@ switch(storage){
             amount.innerText = 'Amount:  2000 '
             paidFor.innerText = 'Payment for :  Ownership Transfer Tricycle '
             reference.innerText = `Reference Code : ${referenceCode || ''}`;
-            paymentNumber.innerText = `Payment Number${code}`
+            paymentNumber.innerText = `Payment Number1${code}`
 
         }
             break;
