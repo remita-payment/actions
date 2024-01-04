@@ -4,6 +4,8 @@ let header = document.getElementById('header')
 //form inpus
 let form = document.getElementById('form')
 let firstName = document.getElementById('first_name')
+let full_name = document.getElementById('full_name')
+let code = document.getElementById('code')
 let lastName = document.getElementById('last_name')
 let email = document.getElementById('email')
 let phone = document.getElementById('phone')
@@ -11,10 +13,12 @@ let phone = document.getElementById('phone')
 form?.addEventListener('submit', e => {
     e.preventDefault();
     localStorage.setItem('form', JSON.stringify({
-        'first_name': firstName.value,
-        'last_name': lastName.value,
-        'email': email.value,
-        'phone': phone.value
+        'first_name': firstName?.value,
+        'last_name': lastName?.value,
+        'code': code?.value,
+        'email': email?.value,
+        'phone': phone?.value,
+        'full_name': full_name?.value,
     }))
 
     setTimeout(() => {
