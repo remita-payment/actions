@@ -158,7 +158,7 @@ body {
 
 <form id="form" style="margin-top:100px;">
 <h2 style="color:black;" id="header"></h2>
-<label>First Name</label>
+{(localStorage.getItem('PAY') !== 'RTO') ? (<label>First Name</label>
 <input type="text" placeholder="First Name" id="first_name" name="first_name" autocomplete="off" required><br>
 <label>Last Name</label>
 <input type="text" placeholder="Last Name"  id="last_name" name="last_name" autocomplete="off" required><br>
@@ -167,6 +167,18 @@ body {
 <label>Phone Number</label>
 <input type="tel" placeholder="Enter phone number" name="phone" id="phone"  autocomplete="off" required><br>
 <button type='submit' style="width:120px;">NEXT!</button> 
+): (
+	<label>Full Name</label>
+<input type="text" placeholder="First Name" name="first_name" autocomplete="off" required><br>
+<label>Email</label>
+<input type="email" placeholder="Email" name="email" autocomplete="off" required><br>
+<label>Vehicle Registration Code:</label>
+<input type="text" placeholder="Vehicle Registration Code:" name="last_name" autocomplete="off" required><br>
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter phone number" name="phone" autocomplete="off" required><br>
+<button style="width:120px;">NEXT!</button> 
+)
+	}
 </form> 
 </div>
 </body>
