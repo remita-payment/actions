@@ -1,7 +1,9 @@
 let header = document.getElementById('name-header')
 let firstName = document.getElementById('first-name')
+let full_Name = document.getElementById('full_name')
 let lastName = document.getElementById('last-name')
 let email = document.getElementById('email')
+let generatedCode= document.getElementById('code')
 let phone = document.getElementById('phone')
 let amount = document.getElementById('amount')
 let paidFor = document.getElementById('paidFor')
@@ -10,6 +12,7 @@ let reference = document.getElementById('reference')
 let paymentNumber= document.getElementById('small')
 
 let formData = JSON.parse(localStorage.getItem('form'));
+
 let storage = localStorage.getItem('PAY');
 
 
@@ -82,8 +85,8 @@ switch(storage){
             let code = Math.floor(Math.random()*(999-100+1)+100)
             
             header.innerHTML = 'RENEWAL TRICYCLE REGISTRATION (OWNER)';
-            firstName.innerText = `First Name : ${formData['first_name']} ` 
-            lastName.innerText = `Last Name : ${formData['last_name']} ` 
+            generatedCode.innerHTML = `Vehicle Registration Code : <br /> <span style='font-weight:bold'>${formData['code']}<span> ` 
+            full_name.innerText = `Full Name : ${formData['full_name']} ` 
             email.innerText = `Email : ${formData['email']} ` 
             phone.innerText = `Phone : ${formData['phone']} ` 
             amount.innerText = 'Amount:  5000 '
