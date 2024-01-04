@@ -20,33 +20,71 @@
 <h2>YOBE STATE ROAD TRAFFIC MANAGEMENT AGENCY</h2>
 <h3 id="name-header">NEW RIDER TRICYCLE REGISTRATION</h3>
 <table>
-    <tbody><tr>
-        <th> Payment Details </th>
-    </tr>
-    <tr>
-        <td id="first-name"></td>
-    </tr>
-    <tr>
-        <td id="last-name"></td>
-    </tr>
-    <tr>
-        <td id="email"></td>
-    </tr>
-    <tr>
-        <td id="phone"></td>
-    </tr>
-    <tr>
-        <td id="amount"></td>
-    </tr>
-    <tr>
-        <td id="paidFor"></td>
-    </tr>
-    <tr>
-        <td id="reference"></td>
-    </tr>
-    <tr>
-        <td><button style="font-size:15px; width:100px;" onclick="window.print()">Print</button> </td>
-    </tr>
+    <tbody>
+    <script>
+    if (localStorage.getItem('PAY') !== 'RTO') {
+	
+		document.write(`
+        <tr>
+            <th> Payment Details </th>
+        </tr>
+        <tr>
+            <td id="first-name"></td>
+        </tr>
+        <tr>
+            <td id="last-name"></td>
+        </tr>
+        <tr>
+            <td id="email"></td>
+        </tr>
+        <tr>
+            <td id="phone"></td>
+        </tr>
+        <tr>
+            <td id="amount"></td>
+        </tr>
+        <tr>
+            <td id="paidFor"></td>
+        </tr>
+        <tr>
+            <td id="reference"></td>
+        </tr>
+        <tr>
+            <td><button style="font-size:15px; width:100px;" onclick="window.print()">Print</button> </td>
+        </tr>
+		`);
+	  } else {
+		document.write(`
+        <tr>
+            <th> Payment Details </th>
+        </tr>
+        <tr>
+            <td id="code"></td>
+        </tr>
+        <tr>
+            <td id="full_name"></td>
+        </tr>
+        <tr>
+            <td id="email"></td>
+        </tr>
+        <tr>
+            <td id="phone"></td>
+        </tr>
+        <tr>
+            <td id="amount"></td>
+        </tr>
+        <tr>
+            <td id="paidFor"></td>
+        </tr>
+        <tr>
+            <td id="reference"></td>
+        </tr>
+        <tr>
+            <td><button style="font-size:15px; width:100px;" onclick="window.print()">Print</button> </td>
+        </tr>
+	`);
+	  }
+	</script>
 </tbody></table>
 </div>
 
